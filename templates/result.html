@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Documentation Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Generated Documentation</h1>
+    <div class="doc-output">{{ documentation|safe }}</div>
+    <a href="/">← Go Back</a>
+  </div>
+</body>
+</html>

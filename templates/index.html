@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Documentation Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Code Documentation Generator</h1>
+    <form action="/result" method="POST" enctype="multipart/form-data">
+      <label>Paste Code:</label>
+      <textarea name="code" placeholder="Paste your Python code here..."></textarea>
+      <div class="divider">OR</div>
+      <label>Upload Python File:</label>
+      <input type="file" name="file" accept=".py"/>
+      <button type="submit">Generate Documentation</button>
+    </form>
+  </div>
+</body>
+</html>
